@@ -1,16 +1,21 @@
 import React from "react";
 import "../Header.css";
+import filter from './icons/filter.svg';
+import graph from './icons/graph.svg';
+import home from './icons/home.svg';
+import plus from './icons/plus.svg';
+import settings from './icons/settings.svg';
 
 export default function Header() {
   return (
     <div id="header">
       <img
-        id="settings"
-        src="/src/icons/settings.svg"
+        className="header-images"
+        src={settings}
         alt="settings svg icon"
       ></img>
       <h3>Habit Tracker</h3>
-      <img id="filter" src="/src/icons/filter.svg" alt="filter icon"></img>
+      <img className="header-images" src={filter} alt="filter icon"></img>
     </div>
   );
 }

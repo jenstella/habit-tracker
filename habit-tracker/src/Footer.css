@@ -12,7 +12,18 @@
     right:0;
 }
 
-.image {
-    height: 22px;
-    width: 22px;
+.home-image {
+    height: 30px;
+    width: 30px;
+    /* border-bottom: 2px solid rgb(239, 71, 111); */
+}
+
+.graph-image {
+    height: 30px;
+    width: 30px;
+}
+
+.plus-image {
+    height: 50px;
+    width: 50px;
 }

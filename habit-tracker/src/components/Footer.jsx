@@ -1,5 +1,10 @@
 import React from "react";
 import "../Footer.css";
+import filter from './icons/filter.svg';
+import graph from './icons/graph.svg';
+import home from './icons/home.svg';
+import plus from './icons/plus.svg';
+import settings from './icons/settings.svg';
 
 export default function Footer() {
   return (
@@ -7,22 +12,22 @@ export default function Footer() {
       {/* home button */}
       <img
         id="home"
-        className="image"
-        src="/src/icons/home.svg"
+        className="home-image"
+        src={home}
         alt="home icon"
       ></img>
       {/* plus button */}
       <img
         id="plus"
-        className="image"
-        src="/src/icons/plus.svg"
+        className="plus-image"
+        src={plus}
         alt="plus icon"
       ></img>{" "}
       {/* metrics button */}
       <img
-        id="graph"
+        id="graph-image"
         className="image"
-        src="/src/icons/graph.svg"
+        src={graph}
         alt="graph icon"
       ></img>
     </div>
