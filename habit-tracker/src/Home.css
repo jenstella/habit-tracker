@@ -4,3 +4,9 @@
     align-items: center;
     height: 50vh;
 }
+
+#tasks {
+    display: flex;
+    flex-direction: row;
+    
+}
