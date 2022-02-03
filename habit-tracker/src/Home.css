@@ -1,12 +1,22 @@
 #homeText {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
+    padding-top: 150px;
 }
 
 #tasks {
     display: flex;
     flex-direction: row;
     
+}
+
+#calendar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
 }

@@ -16,7 +16,7 @@ export default function Footer() {
         src={home}
         alt="home icon"
       ></img>
-      {/* plus button */}
+      {/* plus button => goes to next page (pg5)*/}
       <img
         id="plus"
         className="plus-image"

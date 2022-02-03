@@ -6,10 +6,12 @@ import Calendar from "./Calendar";
 export default function Home() {
   return (
     <div>
+      <div id="calendar-container">
+        <Calendar />
+      </div>
       <div id="homeText">
-          {/* <Calendar/> */}
         <div id="tasks">
-            {/* put a ternary in here if no tasks ? show text : show */}
+          {/* put a ternary in here if no tasks ? show text : show */}
           <p>You have not set any habits yet.</p>
         </div>
       </div>
