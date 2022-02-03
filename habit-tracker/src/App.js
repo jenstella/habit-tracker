@@ -1,5 +1,6 @@
 import './App.css';
 import Counter from './components/Counter';
+import NextButton from './components/NextButton';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           Habit Tracker
         </p>
         <Counter/>
+        <NextButton />
     </div>
   );
 }
