@@ -1,13 +1,12 @@
 import './App.css';
 import Counter from './components/Counter';
+import Header from './components/Header';
 import NextButton from './components/NextButton';
 
 function App() {
   return (
     <div className="App">
-        <p>
-          Habit Tracker
-        </p>
+        <Header/>
         <Counter/>
         <NextButton />
     </div>
