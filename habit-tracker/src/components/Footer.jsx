@@ -7,6 +7,7 @@ import plus from './icons/plus.svg';
 import settings from './icons/settings.svg';
 
 export default function Footer() {
+
   return (
     <div id="footer">
       {/* home button */}
@@ -22,7 +23,7 @@ export default function Footer() {
         className="plus-image"
         src={plus}
         alt="plus icon"
-      ></img>{" "}
+      ></img>
       {/* metrics button */}
       <img
         id="graph-image"
