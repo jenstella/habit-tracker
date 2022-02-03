@@ -1,12 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
         <p>
-          Jen Martelle
+          Habit Tracker
         </p>
+        <Counter/>
     </div>
   );
 }
