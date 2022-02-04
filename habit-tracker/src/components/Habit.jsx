@@ -23,6 +23,9 @@ export default function Habit() {
   const [timeColor, setTimeColor] = useState("rgb(223,223,223)");
   const [timeTextColor, setTimeTextColor] = useState("rgb(78,76,73)");
 
+  // input form state
+    const [input, setInput] = useState("");
+
   return (
     <div>
       {/* goal period - daily/weekly/monthly */}
@@ -73,10 +76,10 @@ export default function Habit() {
         <button className="count-button" onClick={handleIncrement}>
           +
         </button>
-        </div>
+      </div>
 
-        {/* time of day anytime/morning/afternoon/evening */}
-        <div id="time-of-day">
+      {/* time of day anytime/morning/afternoon/evening */}
+      <div id="time-of-day">
         <p className="time-text">Time of Day</p>
         <div id="button-container">
           {/* right now when you press a button, they all change -- fix this! */}
@@ -122,12 +125,35 @@ export default function Habit() {
           </button>
         </div>
       </div>
-        {/* start date */}
-        {/* end date */}
-        {/* reminders */}
-        {/* input box "Write something to motivate yourself:" */}
-
-        {/* Next button at bottom of page */}
+      {/* start date */}
+      <div>
+        <p>Start Date</p>
+        <p>May 28</p>
+      </div>
+      {/* end date */}
+      <div>
+        <p>Start Date</p>
+        <p>None</p>
+      </div>
+      {/* reminders */}
+      <div>
+        <p>Reminders</p>
+        <p>5:00pm</p>
+      </div>
+      {/* input box "Write something to motivate yourself:" */}
+      <div id="input section">
+        <form>
+          <label>
+            Write something that motivates you:
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+          </label>
+        </form>{" "}
+      </div>
+      {/* Next button at bottom of page */}
     </div>
   );
 }
