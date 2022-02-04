@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../Habit.css";
+import NextButton from "./NextButton";
 
 export default function Habit() {
   // counter
@@ -24,7 +25,28 @@ export default function Habit() {
   const [timeTextColor, setTimeTextColor] = useState("rgb(78,76,73)");
 
   // input form state
-    const [input, setInput] = useState("");
+  const [input, setInput] = useState("");
+
+  // next button
+    // setting state for next page
+    const [next, setNext] = useState(0);
+    // setting state for current page
+    const [currentPage, setCurrentPage] = useState(0);
+
+    // handle the page
+    function handlePage(currentPage) {
+
+        // creating variable for the current page + 1 (also the next page)
+        let nextPage = currentPage + 1;
+
+        setNext(nextPage);
+    
+    return (
+        <div>
+            <button onClick={handlePage}>Next</button>
+        </div>
+  )
+};
 
   return (
     <div>
@@ -126,34 +148,38 @@ export default function Habit() {
         </div>
       </div>
       {/* start date */}
-      <div>
-        <p>Start Date</p>
-        <p>May 28</p>
+      <div id="dates">
+        <p className="text">Start Date</p>
+        <p className="bold-text">May 28</p>
       </div>
       {/* end date */}
-      <div>
-        <p>Start Date</p>
-        <p>None</p>
+      <div id="dates">
+        <p className="text">End Date</p>
+        <p className="bold-text">None</p>
       </div>
       {/* reminders */}
-      <div>
-        <p>Reminders</p>
-        <p>5:00pm</p>
+      <div id="dates">
+        <p className="text">Reminders</p>
+        <p className="bold-text">5:00pm</p>
       </div>
       {/* input box "Write something to motivate yourself:" */}
       <div id="input section">
         <form>
-          <label>
+          <label className="text">
             Write something that motivates you:
             <input
               type="text"
               value={input}
+              id="input-box"
               onChange={(e) => setInput(e.target.value)}
             />
           </label>
         </form>{" "}
       </div>
       {/* Next button at bottom of page */}
+      <div id="next-button-container">
+        <button id="next-button" onClick={handlePage}>Next</button>
+      </div>
     </div>
   );
 }
