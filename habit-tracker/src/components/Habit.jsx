@@ -169,6 +169,7 @@ export default function Habit() {
         <form id="form">
           <label className="form-text">
             Write something to motivate yourself:
+            <br></br>
             <input
               type="text"
               value={input}
