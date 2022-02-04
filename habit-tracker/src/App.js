@@ -8,6 +8,7 @@ import graph from './components/icons/graph.svg';
 import home from './components/icons/home.svg';
 import plus from './components/icons/plus.svg';
 import settings from './components/icons/settings.svg';
+import Habit from './components/Habit';
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
     <div className="App">
         <Header/>
         <Home/>
-        {/* <Counter/>
-        <NextButton /> */}
+        <Habit/>
+     
     </div>
   );
 }

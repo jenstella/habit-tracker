@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import "../Home.css";
 import Calendar from "./Calendar";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <div id="calendar-container">

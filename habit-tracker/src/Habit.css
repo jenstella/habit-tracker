@@ -1,0 +1,53 @@
+/* times per day counter styling */
+#times-per-day {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-left: 30px;
+}
+
+.count-button {
+    background-color: rgb(255,255,255);
+    border: none;
+    font-size: medium;
+
+}
+
+.number {
+    background-color: rgb(223,223,223);
+    border-radius: 15px;
+    border: 5px solid rgb(223,223,223);
+}
+
+/* goal period styling */
+.goal-period-button {
+    border: none;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.goal-text {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 30px;
+}
+#button-container {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 30px;
+}
+
+/* time of day picker */
+#times-of-day {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-left: 30px;
+    margin-bottom: 20;
+}
+
+.time-text {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 30px;
+}
