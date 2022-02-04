@@ -3,10 +3,15 @@ import { useState } from "react";
 import "../Habit.css";
 import NextButton from "./NextButton";
 import AddHabitHeader from "./AddHabitHeader";
+import {useNavigate} from 'react-router-dom';
 
 export default function Habit() {
+
+let navigate = useNavigate();
   // counter
   // set initial count state to 0
+  // pass this through as props to next page to show Yoga 0/?  +  
+  // to show how many were selected
   const [count, setCount] = useState(0);
   // increment event handler
   const handleIncrement = () => {
@@ -18,6 +23,8 @@ export default function Habit() {
   };
 
   // goal period button color
+  // make state for each button -- long way
+  // another way to do would be flip logic and say IF x is selected change color
   const [color, setColor] = useState("rgb(223,223,223)");
   const [textColor, setTextColor] = useState("rgb(78,76,73)");
 
@@ -182,10 +189,21 @@ export default function Habit() {
 
       {/* Next button at bottom of page */}
       <div id="next-button-container">
-        <button id="next-button" onClick={handlePage}>
+        <button id="next-button" onClick={() => navigate('/')}>
           Next
         </button>
       </div>
     </div>
   );
 }
+
+// <form>
+// <Button onClick={() => navigate('/Habit')}>
+// <img
+// id="plus"
+// className="plus-image"
+// src={plus}
+// alt="plus icon"
+// ></img>
+// </Button>
+// </form>
