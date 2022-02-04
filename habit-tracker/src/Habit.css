@@ -1,9 +1,13 @@
+/* adjust css to add in media queries -- clean it all up */
+
+
 /* times per day counter styling */
 #times-per-day {
   display: flex;
   flex-direction: row;
-  align-content: flex-start;
-  margin-left: 30px;
+  align-content: space-around;
+  justify-content: center;
+  /* margin-left: 30px; */
   align-items: baseline;
 }
 
@@ -20,6 +24,10 @@
 }
 
 /* goal period styling */
+#goal-period {
+    margin-top: 60px;
+}
+
 .goal-period-button {
   border: none;
   padding: 7px;
@@ -28,28 +36,28 @@
 
 .goal-text {
   display: flex;
-  align-content: flex-start;
-  margin-left: 30px;
+  align-content: space-around;
+  justify-content: center;
+  /* margin-left: 30px; */
 }
 #button-container {
   display: flex;
-  align-content: flex-start;
-  margin-left: 30px;
+  align-content: space-around;
+  justify-content: center;
 }
 
 /* time of day picker */
 #times-of-day {
   display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  margin-left: 30px;
+  align-content: space-around;
+  justify-content: center;
   margin-bottom: 20;
 }
 
 .time-text {
   display: flex;
-  align-content: flex-start;
-  margin-left: 30px;
+  align-content: space-around;
+  justify-content: center;
 }
 
 /* .text {
@@ -63,8 +71,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  justify-content: space-around;
   align-items: baseline;
-  margin-left: 30px;
+  max-width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bold-text {
   display: flex;
@@ -79,6 +90,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 #input-box {
@@ -86,7 +99,10 @@
     margin-top: 10px;
     border-radius: 15px;
     color: black;
-    width: 70vw;
+    /* width: 70vw; */
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-text {
@@ -102,11 +118,11 @@
     padding: 30px;
     font-family:Arial, Helvetica, sans-serif;
     align-items: flex-end;
-    position:absolute;
-    left:0;
+    /* position:absolute; */
+    /* left:0;
     bottom:0;
-    right:0;
-}
+    right:0; */
+} 
 
 #next-button {
     background-color: black;
