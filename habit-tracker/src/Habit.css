@@ -4,6 +4,7 @@
   flex-direction: row;
   align-content: flex-start;
   margin-left: 30px;
+  align-items: baseline;
 }
 
 .count-button {
@@ -89,7 +90,6 @@
 }
 
 .form-text {
-    /* display: flex; */
     align-content: flex-start;
 }
 /* next button styling */

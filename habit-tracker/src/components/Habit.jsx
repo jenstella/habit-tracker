@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../Habit.css";
 import NextButton from "./NextButton";
+import AddHabitHeader from "./AddHabitHeader";
 
 export default function Habit() {
   // counter
@@ -28,28 +29,28 @@ export default function Habit() {
   const [input, setInput] = useState("");
 
   // next button
-    // setting state for next page
-    const [next, setNext] = useState(0);
-    // setting state for current page
-    const [currentPage, setCurrentPage] = useState(0);
+  // setting state for next page
+  const [next, setNext] = useState(0);
+  // setting state for current page
+  const [currentPage, setCurrentPage] = useState(0);
 
-    // handle the page
-    function handlePage(currentPage) {
+  // handle the page
+  function handlePage(currentPage) {
+    // creating variable for the current page + 1 (also the next page)
+    let nextPage = currentPage + 1;
 
-        // creating variable for the current page + 1 (also the next page)
-        let nextPage = currentPage + 1;
+    setNext(nextPage);
 
-        setNext(nextPage);
-    
     return (
-        <div>
-            <button onClick={handlePage}>Next</button>
-        </div>
-  )
-};
+      <div>
+        <button onClick={handlePage}>Next</button>
+      </div>
+    );
+  }
 
   return (
     <div>
+      <AddHabitHeader />
       {/* goal period - daily/weekly/monthly */}
       <div id="goal-period">
         <p className="goal-text">Goal Period</p>
@@ -180,7 +181,9 @@ export default function Habit() {
 
       {/* Next button at bottom of page */}
       <div id="next-button-container">
-        <button id="next-button" onClick={handlePage}>Next</button>
+        <button id="next-button" onClick={handlePage}>
+          Next
+        </button>
       </div>
     </div>
   );
