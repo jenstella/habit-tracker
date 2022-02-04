@@ -162,10 +162,11 @@ export default function Habit() {
         <p className="text">Reminders</p>
         <p className="bold-text">5:00pm</p>
       </div>
+
       {/* input box "Write something to motivate yourself:" */}
       <div id="input section">
-        <form>
-          <label className="text">
+        <form id="form">
+          <label className="form-text">
             Write something that motivates you:
             <input
               type="text"
@@ -176,6 +177,7 @@ export default function Habit() {
           </label>
         </form>{" "}
       </div>
+
       {/* Next button at bottom of page */}
       <div id="next-button-container">
         <button id="next-button" onClick={handlePage}>Next</button>
