@@ -55,18 +55,18 @@ let navigate = useNavigate();
 
   // handle the page
   // pass props through here
-  function handlePage(currentPage) {
-    // creating variable for the current page + 1 (also the next page)
-    let nextPage = currentPage + 1;
+  // function handlePage(currentPage) {
+  //   // creating variable for the current page + 1 (also the next page)
+  //   let nextPage = currentPage + 1;
 
-    setNext(nextPage);
+  //   setNext(nextPage);
 
-    return (
-      <div>
-        <button onClick={handlePage}>Next</button>
-      </div>
-    );
-  }
+  //   return (
+  //     <div>
+  //       <button onClick={handlePage}>Next</button>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
@@ -202,7 +202,7 @@ let navigate = useNavigate();
 
       {/* Next button at bottom of page */}
       <div id="next-button-container">
-        <button id="next-button" onClick={() => navigate('/')}>
+        <button id="next-button" onClick={() =>  navigate('/', {state: count})}>
           Next
         </button>
       </div>

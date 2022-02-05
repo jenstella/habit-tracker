@@ -8,13 +8,15 @@ import graph from "./icons/graph.svg";
 import home from "./icons/home.svg";
 import plus from "./icons/plus.svg";
 import settings from "./icons/settings.svg";
-import Notifcation from "./Notifcation";
+import Notification from "./Notification";
 import Habit from "./Habit";
+import { useLocation } from "react-router-dom";
 
 export default function Home(props) {
+  const location = useLocation();
+  console.log(location.state);
 
-
-  return (
+  return location.state > 0 ? (
     <div>
       <div id="header">
         <img
@@ -30,10 +32,29 @@ export default function Home(props) {
       </div>
       <div id="homeText">
         <div id="tasks">
-          {props.count > 0
-          ? <Notification /> : <p>You have not set any habits yet.</p>}
-          
-          {/* <p>You have not set any habits yet.</p> */}
+          {/* design notification here -- use location.state here */}
+          <Notification />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  ) : (
+    <div>
+      <div id="header">
+        <img
+          className="header-images"
+          src={settings}
+          alt="settings svg icon"
+        ></img>
+        <h3>Habit Tracker</h3>
+        <img className="header-images" src={filter} alt="filter icon"></img>
+      </div>
+      <div id="calendar-container">
+        <Calendar />
+      </div>
+      <div id="homeText">
+        <div id="tasks">
+          <p>You have not set any habits yet.</p>
         </div>
       </div>
       <Footer />
