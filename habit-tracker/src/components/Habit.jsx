@@ -42,18 +42,19 @@ let navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(0);
 
   // handle the page
-  function handlePage(currentPage) {
-    // creating variable for the current page + 1 (also the next page)
-    let nextPage = currentPage + 1;
+  // pass props through here
+  // function handlePage(currentPage) {
+  //   // creating variable for the current page + 1 (also the next page)
+  //   let nextPage = currentPage + 1;
 
-    setNext(nextPage);
+  //   setNext(nextPage);
 
-    return (
-      <div>
-        <button onClick={handlePage}>Next</button>
-      </div>
-    );
-  }
+  //   return (
+  //     <div>
+  //       <button onClick={handlePage}>Next</button>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>

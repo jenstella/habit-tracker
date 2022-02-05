@@ -25,4 +25,9 @@
 .plus-image {
     height: 50px;
     width: 50px;
+;}
+
+.btn-primary {
+    border: none;
+    background-color: white;
 }

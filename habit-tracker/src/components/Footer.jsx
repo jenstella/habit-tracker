@@ -24,7 +24,7 @@ export default function Footer() {
 
 
       <form>
-        <Button onClick={() => navigate('/Habit')}>
+        <Button variable="btn btn-link" onClick={() => navigate('/Habit')}>
       <img
         id="plus"
         className="plus-image"
