@@ -24,7 +24,7 @@ let navigate = useNavigate();
 
   // goal period - button color
   // make state for each button -- long way
-  // another way to do would be flip logic and say IF x is selected change color
+  // another way to do would be flip logic and say IF x is selected change color -- refine
   const [dailyColor, setDailyColor] = useState("rgb(223,223,223)");
   const [dailyTextColor, setDailyTextColor] = useState("rgb(78,76,73)");
   const [weeklyColor, setWeeklyColor] = useState("rgb(223,223,223)");
@@ -33,7 +33,7 @@ let navigate = useNavigate();
   const [monthlyTextColor, setMonthlyTextColor] = useState("rgb(78,76,73)");
 
   // time of day button color
-  // another way to do would be flip logic and say IF x is selected change color
+  // another way to do would be flip logic and say IF x is selected change color -- refine
   const [anytimeColor, setAnytimeColor] = useState("rgb(223,223,223)");
   const [anytimeTextColor, setAnytimeTextColor] = useState("rgb(78,76,73)");
   const [morningColor, setMorningColor] = useState("rgb(223,223,223)");
