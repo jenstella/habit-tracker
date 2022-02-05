@@ -7,7 +7,6 @@
   flex-direction: row;
   align-content: space-around;
   justify-content: center;
-  /* margin-left: 30px; */
   align-items: baseline;
 }
 
@@ -127,10 +126,7 @@
     padding: 30px;
     font-family:Arial, Helvetica, sans-serif;
     align-items: flex-end;
-    /* position:absolute; */
-    /* left:0;
-    bottom:0;
-    right:0; */
+
 } 
 
 #next-button {
@@ -142,5 +138,6 @@
     font-size: large;
     font-weight: 700;
     border-radius: 15px;
+    max-width: 400px;
 
 }

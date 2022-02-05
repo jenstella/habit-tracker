@@ -8,7 +8,6 @@ import graph from "./icons/graph.svg";
 import home from "./icons/home.svg";
 import plus from "./icons/plus.svg";
 import settings from "./icons/settings.svg";
-// import Notification from "./Notification";
 import Habit from "./Habit";
 import { useLocation } from "react-router-dom";
 
@@ -35,8 +34,9 @@ export default function Home(props) {
       <div id="home-text-tasks">
         <div id="do-tasks">
           {/* design notification here -- use location.state here */}
-          <h2 id="do-task-text">Do yoga</h2>
-          <p>TODAY: 0/{location.state}</p>
+          <div id="do-task-text">Do yoga</div>
+          <div>TODAY: 0 / {location.state}</div>
+          <div id="plus-sign">+</div>
         </div>
       </div>
       <Footer />

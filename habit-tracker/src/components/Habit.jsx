@@ -53,21 +53,6 @@ let navigate = useNavigate();
   // setting state for current page
   const [currentPage, setCurrentPage] = useState(0);
 
-  // handle the page
-  // pass props through here
-  // function handlePage(currentPage) {
-  //   // creating variable for the current page + 1 (also the next page)
-  //   let nextPage = currentPage + 1;
-
-  //   setNext(nextPage);
-
-  //   return (
-  //     <div>
-  //       <button onClick={handlePage}>Next</button>
-  //     </div>
-  //   );
-  // }
-
   return (
     <div>
       <AddHabitHeader />
@@ -208,15 +193,4 @@ let navigate = useNavigate();
       </div>
     </div>
   );
-}
-
-// <form>
-// <Button onClick={() => navigate('/Habit')}>
-// <img
-// id="plus"
-// className="plus-image"
-// src={plus}
-// alt="plus icon"
-// ></img>
-// </Button>
-// </form>
+};

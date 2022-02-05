@@ -8,15 +8,17 @@ export default function AddHabitHeader() {
 
   return (
     <div id="header">
-      <div id="back-button">
-        <form>
-          <Button variable="btn btn-link" onClick={() => navigate("/")}>
-            <p>Back</p>
-          </Button>
-        </form>
-      </div>
-      <div id="header-text">
-        <h3>Yoga Habit</h3>
+      <div id="content-container">
+        <div id="back-button">
+          <form>
+            <Button variable="btn btn-link" onClick={() => navigate("/")}>
+              <p>Back</p>
+            </Button>
+          </form>
+        </div>
+        <div id="header-text">
+          <h3>Yoga Habit</h3>
+        </div>
       </div>
     </div>
   );
