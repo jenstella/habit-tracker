@@ -55,18 +55,18 @@ let navigate = useNavigate();
 
   // handle the page
   // pass props through here
-  // function handlePage(currentPage) {
-  //   // creating variable for the current page + 1 (also the next page)
-  //   let nextPage = currentPage + 1;
+  function handlePage(currentPage) {
+    // creating variable for the current page + 1 (also the next page)
+    let nextPage = currentPage + 1;
 
-  //   setNext(nextPage);
+    setNext(nextPage);
 
-  //   return (
-  //     <div>
-  //       <button onClick={handlePage}>Next</button>
-  //     </div>
-  //   );
-  // }
+    return (
+      <div>
+        <button onClick={handlePage}>Next</button>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -171,7 +171,7 @@ let navigate = useNavigate();
       {/* start date */}
       <div id="dates">
         <p className="text">Start Date</p>
-        <p className="bold-text">May 28</p>
+        <p className="bold-text">May 30</p>
       </div>
       {/* end date */}
       <div id="dates">

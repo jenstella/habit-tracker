@@ -9,9 +9,10 @@ import home from "./components/icons/home.svg";
 import plus from "./components/icons/plus.svg";
 import settings from "./components/icons/settings.svg";
 import Habit from "./components/Habit";
+import Notifcation from "./components/Notifcation";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <BrowserRouter>

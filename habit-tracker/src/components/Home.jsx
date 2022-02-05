@@ -8,8 +8,12 @@ import graph from "./icons/graph.svg";
 import home from "./icons/home.svg";
 import plus from "./icons/plus.svg";
 import settings from "./icons/settings.svg";
+import Notifcation from "./Notifcation";
+import Habit from "./Habit";
 
 export default function Home(props) {
+
+
   return (
     <div>
       <div id="header">
@@ -26,8 +30,10 @@ export default function Home(props) {
       </div>
       <div id="homeText">
         <div id="tasks">
-          {/* put a ternary in here if no tasks ? show text : show */}
-          <p>You have not set any habits yet.</p>
+          {props.count > 0
+          ? <Notification /> : <p>You have not set any habits yet.</p>}
+          
+          {/* <p>You have not set any habits yet.</p> */}
         </div>
       </div>
       <Footer />
