@@ -22,15 +22,26 @@ let navigate = useNavigate();
     setCount((prevCount) => prevCount - 1);
   };
 
-  // goal period button color
+  // goal period - button color
   // make state for each button -- long way
   // another way to do would be flip logic and say IF x is selected change color
-  const [color, setColor] = useState("rgb(223,223,223)");
-  const [textColor, setTextColor] = useState("rgb(78,76,73)");
+  const [dailyColor, setDailyColor] = useState("rgb(223,223,223)");
+  const [dailyTextColor, setDailyTextColor] = useState("rgb(78,76,73)");
+  const [weeklyColor, setWeeklyColor] = useState("rgb(223,223,223)");
+  const [weeklyTextColor, setWeeklyTextColor] = useState("rgb(78,76,73)");
+  const [monthlyColor, setMonthlyColor] = useState("rgb(223,223,223)");
+  const [monthlyTextColor, setMonthlyTextColor] = useState("rgb(78,76,73)");
 
   // time of day button color
-  const [timeColor, setTimeColor] = useState("rgb(223,223,223)");
-  const [timeTextColor, setTimeTextColor] = useState("rgb(78,76,73)");
+  // another way to do would be flip logic and say IF x is selected change color
+  const [anytimeColor, setAnytimeColor] = useState("rgb(223,223,223)");
+  const [anytimeTextColor, setAnytimeTextColor] = useState("rgb(78,76,73)");
+  const [morningColor, setMorningColor] = useState("rgb(223,223,223)");
+  const [morningTextColor, setMorningTextColor] = useState("rgb(78,76,73)");
+  const [afternoonColor, setAfternoonColor] = useState("rgb(223,223,223)");
+  const [afternoonTextColor, setAfternoonTextColor] = useState("rgb(78,76,73)");
+  const [eveColor, setEveColor] = useState("rgb(223,223,223)");
+  const [eveTextColor, setEveTextColor] = useState("rgb(78,76,73)");
 
   // input form state
   const [input, setInput] = useState("");
@@ -66,30 +77,30 @@ let navigate = useNavigate();
           {/* right now when you press a button, they all change -- fix this! */}
           <button
             className="goal-period-button"
-            style={{ background: color, color: textColor }}
+            style={{ background: dailyColor, color: dailyTextColor }}
             onClick={() => {
-              setColor("rgb(45,138,178");
-              setTextColor("white");
+              setDailyColor("rgb(45,138,178");
+              setDailyTextColor("white");
             }}
           >
             Daily
           </button>
           <button
             className="goal-period-button"
-            style={{ background: color, color: textColor }}
+            style={{ background: weeklyColor, color: weeklyTextColor }}
             onClick={() => {
-              setColor("rgb(45,138,178");
-              setTextColor("white");
+              setWeeklyColor("rgb(45,138,178");
+              setWeeklyTextColor("white");
             }}
           >
             Weekly
           </button>
           <button
             className="goal-period-button"
-            style={{ background: color, color: textColor }}
+            style={{ background: monthlyColor, color: monthlyTextColor }}
             onClick={() => {
-              setColor("rgb(45,138,178");
-              setTextColor("white");
+              setMonthlyColor("rgb(45,138,178");
+              setMonthlyTextColor("white");
             }}
           >
             Monthly
@@ -116,40 +127,40 @@ let navigate = useNavigate();
           {/* right now when you press a button, they all change -- fix this! */}
           <button
             className="goal-period-button"
-            style={{ background: timeColor, color: timeTextColor }}
+            style={{ background: anytimeColor, color: anytimeTextColor }}
             onClick={() => {
-              setTimeColor("rgb(45,138,178");
-              setTimeTextColor("white");
+              setAnytimeColor("rgb(45,138,178");
+              setAnytimeTextColor("white");
             }}
           >
             Anytime
           </button>
           <button
             className="goal-period-button"
-            style={{ background: timeColor, color: timeTextColor }}
+            style={{ background: morningColor, color: morningTextColor }}
             onClick={() => {
-              setTimeColor("rgb(45,138,178");
-              setTimeTextColor("white");
+              setMorningColor("rgb(45,138,178");
+              setMorningTextColor("white");
             }}
           >
             Morning
           </button>
           <button
             className="goal-period-button"
-            style={{ background: timeColor, color: timeTextColor }}
+            style={{ background: afternoonColor, color: afternoonTextColor }}
             onClick={() => {
-              setTimeColor("rgb(45,138,178");
-              setTimeTextColor("white");
+              setAfternoonColor("rgb(45,138,178");
+              setAfternoonTextColor("white");
             }}
           >
             Afternoon
           </button>
           <button
             className="goal-period-button"
-            style={{ background: timeColor, color: timeTextColor }}
+            style={{ background: eveColor, color: eveTextColor }}
             onClick={() => {
-              setTimeColor("rgb(45,138,178");
-              setTimeTextColor("white");
+              setEveColor("rgb(45,138,178");
+              setEveTextColor("white");
             }}
           >
             Evening
