@@ -8,7 +8,7 @@ import graph from "./icons/graph.svg";
 import home from "./icons/home.svg";
 import plus from "./icons/plus.svg";
 import settings from "./icons/settings.svg";
-import Notification from "./Notification";
+// import Notification from "./Notification";
 import Habit from "./Habit";
 import { useLocation } from "react-router-dom";
 
@@ -30,14 +30,20 @@ export default function Home(props) {
       <div id="calendar-container">
         <Calendar />
       </div>
-      <div id="homeText">
-        <div id="tasks">
+
+
+      <div id="home-text-tasks">
+        <div id="do-tasks">
           {/* design notification here -- use location.state here */}
-          <Notification />
+          <h3 id="do-task-text">Do yoga</h3>
+          <p>TODAY: 0/{location.state}</p>
         </div>
       </div>
       <Footer />
     </div>
+
+
+
   ) : (
     <div>
       <div id="header">

@@ -20,3 +20,19 @@
     align-items: flex-start;
 
 }
+
+#do-tasks {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(221,221,221);
+    width: 80vw;
+    border-radius: 15px;
+}
+
+#home-text-tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
