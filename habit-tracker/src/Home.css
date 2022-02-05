@@ -24,8 +24,9 @@
 #do-tasks {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: rgb(221,221,221);
-    width: 80vw;
+    width: 90vw;
     border-radius: 15px;
 }
 

@@ -35,7 +35,7 @@ export default function Home(props) {
       <div id="home-text-tasks">
         <div id="do-tasks">
           {/* design notification here -- use location.state here */}
-          <h3 id="do-task-text">Do yoga</h3>
+          <h2 id="do-task-text">Do yoga</h2>
           <p>TODAY: 0/{location.state}</p>
         </div>
       </div>
