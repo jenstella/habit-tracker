@@ -8,6 +8,7 @@ import {useNavigate} from 'react-router-dom';
 export default function Habit() {
 
 let navigate = useNavigate();
+
   // counter
   // set initial count state to 0
   // pass this through as props to next page to show Yoga 0/?  +  
