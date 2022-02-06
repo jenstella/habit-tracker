@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "../Habit.css";
-import NextButton from "./NextButton";
 import AddHabitHeader from "./AddHabitHeader";
 import { useNavigate } from "react-router-dom";
 

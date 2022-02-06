@@ -29,7 +29,6 @@ export default function Home(props) {
         <Calendar />
       </div>
 
-
       <div id="home-text-tasks">
         <div id="do-tasks">
           {/* design notification here -- use location.state here */}
@@ -40,9 +39,6 @@ export default function Home(props) {
       </div>
       <Footer />
     </div>
-
-
-
   ) : (
     <div>
       <div id="header">
