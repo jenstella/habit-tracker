@@ -1,0 +1,25 @@
+Notes
+
+Challenges
+----
+*Initially when routing the pages, I couldn't figure out why it wasn't working. I historically have used Switch. After a quick google I found out it has been updated to Routes.
+*Getting the alignment right on the Habit page(!)
+
+What I'd do differently / next
+----
+*I have not used libraries like react-responsive for media queries, but if this was an actual project I had more time on I'd do a bit more digging into using that for 'easier' responsiveness.
+*Go through and further refine code, condense CSS where applicable
+*I could definitely improve my classNames and id names to be more clear, and less similar to one another. This is something I would do if this was a longer project // something I need to do from the beginning moving forward!
+*If I was passing state for the goal period, and time of day, I would create that logic to be something like:
+    if X is selected - change color & save to state
+versus how the color changing state is written out in a longer syntax now. I would refine that.
+*SCSS?
+
+Other talking points
+----
+*In the past for routing I have used Browser Router & Switch. This has been updated, so I used Routes / useNavigation.
+Also passing state with useLocation new to me as well. 
+
+Overall
+----
+Overall, I really enjoyed this challenge! It was fun to flex my brain and create this habit tracker. After not working in React for a bit, it felt both really refreshing and fun to do!

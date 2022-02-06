@@ -3,15 +3,14 @@ import { useState } from "react";
 import "../Habit.css";
 import NextButton from "./NextButton";
 import AddHabitHeader from "./AddHabitHeader";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function Habit() {
-
-let navigate = useNavigate();
+  let navigate = useNavigate();
 
   // counter
   // set initial count state to 0
-  // pass this through as props to next page to show Yoga 0/?  +  
+  // pass this through as props to next page to show Yoga 0/?  +
   // to show how many were selected
   const [count, setCount] = useState(0);
   // increment event handler
@@ -47,12 +46,6 @@ let navigate = useNavigate();
   // input form state
   const [input, setInput] = useState("");
 
-  // next button
-  // setting state for next page
-  const [next, setNext] = useState(0);
-  // setting state for current page
-  const [currentPage, setCurrentPage] = useState(0);
-
   return (
     <div>
       <AddHabitHeader />
@@ -60,7 +53,6 @@ let navigate = useNavigate();
       <div id="goal-period">
         <p className="goal-text">Goal Period</p>
         <div id="button-container">
-          {/* right now when you press a button, they all change -- fix this! */}
           <button
             className="goal-period-button"
             style={{ background: dailyColor, color: dailyTextColor }}
@@ -110,7 +102,6 @@ let navigate = useNavigate();
       <div id="time-of-day">
         <p className="time-text">Time of Day</p>
         <div id="button-container">
-          {/* right now when you press a button, they all change -- fix this! */}
           <button
             className="goal-period-button"
             style={{ background: anytimeColor, color: anytimeTextColor }}
@@ -153,23 +144,26 @@ let navigate = useNavigate();
           </button>
         </div>
       </div>
+
       {/* start date */}
-      <div id="dates">
-        <p className="text">Start Date</p>
-        <p className="bold-text">May 30</p>
-      </div>
-      {/* end date */}
-      <div id="dates">
-        <p className="text">End Date</p>
-        <p className="bold-text">None</p>
-      </div>
-      {/* reminders */}
-      <div id="dates">
-        <p className="text">Reminders</p>
-        <p className="bold-text">5:00pm</p>
+      <div id="dates-container">
+        <div id="dates">
+          <p className="text">Start Date</p>
+          <p className="bold-text">May 30</p>
+        </div>
+        {/* end date */}
+        <div id="dates">
+          <p className="text">End Date</p>
+          <p className="bold-text">None</p>
+        </div>
+        {/* reminders */}
+        <div id="dates">
+          <p className="text">Reminders</p>
+          <p className="bold-text">5:00pm</p>
+        </div>
       </div>
 
-      {/* input box "Write something to motivate yourself:" */}
+      {/* input box  */}
       <div id="input section">
         <form id="form">
           <label className="form-text">
@@ -187,10 +181,13 @@ let navigate = useNavigate();
 
       {/* Next button at bottom of page */}
       <div id="next-button-container">
-        <button id="next-button" onClick={() =>  navigate('/', {state: count})}>
+        <button
+          id="next-button"
+          onClick={() => navigate("/", { state: count })}
+        >
           Next
         </button>
       </div>
     </div>
   );
-};
+}
